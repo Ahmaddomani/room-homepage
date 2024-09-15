@@ -1,0 +1,82 @@
+.NavApics {
+  width: 60%;
+  background-image: url("../images/desktop-image-hero-1.jpg");
+  background-size: cover;
+  background-repeat: round;
+  padding: 25px 35px;
+  color: white;
+  font-weight: normal;
+  position: relative;
+  transition: 0.3s;
+}
+@media (max-width: 992px) {
+  .NavApics {
+    height: 300px;
+    width: 100%;
+    position: relative;
+  }
+}
+@media (max-width: 767px) {
+  .NavApics {
+    padding: 10px 0;
+  }
+}
+img.humburgar {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .links {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+    margin: 0;
+    width: auto;
+    flex: 1;
+  }
+  img.humburgar {
+    display: block;
+    position: absolute;
+    top: 0;
+    padding: 14px;
+  }
+}
+
+.drop-menu {
+  position: absolute;
+  top: -123px;
+  left: 0;
+  display: flex;
+  background-color: white;
+  padding: 30px;
+  width: 100%;
+  display: none;
+  align-items: center;
+  transition: 0.3s;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .drop-menu {
+    display: inherit;
+  }
+}
+.drop-menu img {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+}
+.drop-menu ul {
+  list-style: none;
+  display: flex;
+  margin-top: 15px;
+}
+.drop-menu ul li a {
+  padding: 10px 13px;
+}
+.drop-menu ul li a {
+  color: black;
+  display: block;
+}

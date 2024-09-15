@@ -1,0 +1,33 @@
+:root {
+  --Dark-Gray: rgb(68, 68, 68);
+}
+.Arrows {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: -125px;
+  width: 125px;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .Arrows {
+    right: 0;
+  }
+}
+div.left,
+div.rigth {
+  width: 50%;
+  flex: 1;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+div.left:hover,
+div.rigth:hover {
+  background-color: var(--Dark-Gray);
+}
+img {
+  padding: 20px;
+}

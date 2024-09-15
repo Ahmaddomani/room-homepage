@@ -1,0 +1,89 @@
+.CarsoulAtext {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  padding: 30px 70px;
+}
+@media (max-width: 992px) {
+  .CarsoulAtext {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+p.title {
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 0;
+  width: 300px;
+  animation-name: ShowSlow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0.3;
+}
+@media (max-width: 1001px) {
+  p.title {
+    font-size: 33px;
+  }
+}
+p.description {
+  padding-right: 50px;
+  line-height: 1.5;
+  font-size: 13.2px;
+  color: #aaa;
+  font-weight: 550;
+  margin-top: 20px;
+  height: 100px;
+  overflow: auto;
+  animation-name: ShowSlow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  opacity: 0.3;
+}
+
+@media (max-width: 550px) {
+  p.description {
+    padding-right: 0;
+    overflow: inherit;
+    margin-bottom: 30px;
+  }
+}
+
+.show-more {
+  font-weight: 600;
+  letter-spacing: 11px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.show-more:hover {
+  color: #aaa;
+}
+.show-more img {
+  padding: 0;
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: translateY(3px);
+}
+@keyframes move {
+  50% {
+    margin-inline-start: 20px;
+  }
+  100% {
+    margin-inline-start: 0;
+  }
+}
+
+@keyframes ShowSlow {
+  form {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}

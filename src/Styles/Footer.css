@@ -1,0 +1,29 @@
+.footer {
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 30% 1fr 30.8%;
+}
+
+@media (max-width: 992px) {
+  .footer {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 550px) {
+  .footer {
+    grid-template-columns: 100%;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  flex: 1;
+}
+
+@media (max-width: 550px) {
+  .img {
+    height: 200px;
+  }
+}

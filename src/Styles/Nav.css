@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  margin-inline-start: 0;
+  margin-bottom: 13px;
+}
+
+li a {
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.3s;
+  font-size: 14px;
+}
+li:not(:first-child) a {
+  padding: 10px 20px;
+}
+
+a::before {
+  transition: 0.3s;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: white;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+li a:hover::before {
+  width: 25px;
+}
+li a:hover {
+  color: #eee;
+}
+
+.logo {
+  font-weight: 400;
+}
+
+.show {
+  top: 0 !important;
+}
